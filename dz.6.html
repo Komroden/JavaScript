@@ -13,37 +13,44 @@
         "use strict";
         let money = Number(prompt("Какое количество денег вы желаете внести на депозит?"));
         let rub = "";
-        let lastNumber = money % 10;
+        let lastNumber = money % 100;
         if (isNaN(money)) {
             alert("Введите число!");
 
         }
-        if ((money < 0)) {
+        if (money < 0) {
             alert("Введите положительное число");
         }
-        if ((money >= 0)) {
-            function currency(lastNumber) {
-                switch (lastNumber) {
-                    case 1:
-                        return rub = "рубль";
+        if (money >= 0) {
+            if (lastNumber >= 11 && lastNumber <= 14) {
+                rub = "рублей";
+            } else {
+                lastNumber = money % 10;
 
-                    case 2:
-                    case 3:
-                    case 4:
-                        return rub = "рубля";
+                function currency(lastNumber) {
+                    switch (lastNumber) {
+                        case 1:
+                            rub = "рубль";
+                            break;
 
-                    case 5:
-                    case 6:
-                    case 7:
-                    case 8:
-                    case 9:
-                    case 0:
-                        return rub = "рублей";
+                        case 2:
+                        case 3:
+                        case 4:
+                            rub = "рубля";
+                            break;
+                        case 5:
+                        case 6:
+                        case 7:
+                        case 8:
+                        case 9:
+                        case 0:
+                            rub = "рублей";
+                            break;
+                    }
 
                 }
-
+                currency(lastNumber);
             }
-            currency(lastNumber);
 
             alert("Ваша сумма в " + money + " " + rub + " успешно зачислена!");
         }
