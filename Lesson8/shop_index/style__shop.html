@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shop</title>
+  <link rel="stylesheet" href="style__shop.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="container">
+        <div class="header__navbar">
+          <div class="header__left">
+            <img class="header__logo" src="img/logo.svg" alt="logo">
+            <img src="img/search.svg" alt="search">
+          </div>
+          <div class="header__ridth">
+            <img class="header__burger" src="img/burger.svg" alt="burger">
+            <img class="header__contact" src="img/contact.svg" alt="contact">
+            <span class="header__carticonwrap">
+              <img class="header__carticon" src="img/cart.png" alt="">
+              <span>0</span>
+            </span>
+
+            <div class="header__basket hidden">
+              <div class="header__basketrow header__basketheader">
+                <div>Название товара</div>
+                <div>Количество</div>
+                <div>Цена за шт.</div>
+                <div>Итого</div>
+              </div>
+
+              <div class="header__baskettotal">
+                Товаров в корзине на сумму:
+                $<span class="header__baskettotalvalue">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrivals">
+      <div class="container">
+        <div class="arrivals__content">
+          <div class="arrivals__left">
+            <h1 class="arrivals__title">NEW ARRIVALS</h1>
+          </div>
+          <div class="arrivals__ridth">
+            <nav>
+              <a href="#" class="arrivals__home">HOME /</a>
+              <a href="#" class="arrivals__men">MEN /</a>
+              <a href="#" class="arrivals__new">NEW ARRIVALS</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter container">
+      <div class="filter__left">
+        <h3 class="filter__titleleft">FILTER</h3>
+        <img class="filter__imgleft" src="img/filter.svg" alt="filter">
+        <div class="filter__menuleft filter__hiddenleft">
+          <nav class="filter__categoryleft">
+            <div class="filter__headerleft">CATEGORY</div>
+            <div class="filter__hiddenmenuleft">
+              <a href="#">Accessories</a>
+              <a href="#">Bags</a>
+              <a href="#">Denim</a>
+              <a href="#">Hoodies & Sweatshirts</a>
+              <a href="#">Jackets & Coats</a>
+              <a href="#">Polos</a>
+              <a href="#">Shirts</a>
+              <a href="#">Shoes</a>
+              <a href="#">Sweaters & Knits</a>
+              <a href="#">T-Shirts</a>
+              <a href="#">Tanks</a>
+            </div>
+          </nav>
+          <nav class="filter__categoryleft">
+            <div class="filter__headerleft">BRAND</div>
+            <div class="filter__hiddenmenuleft">
+              <a href="#">Accessories</a>
+              <a href="#">Bags</a>
+              <a href="#">Denim</a>
+              <a href="#">Hoodies & Sweatshirts</a>
+              <a href="#">Jackets & Coats</a>
+              <a href="#">Polos</a>
+              <a href="#">Shirts</a>
+              <a href="#">Shoes</a>
+              <a href="#">Sweaters & Knits</a>
+              <a href="#">T-Shirts</a>
+              <a href="#">Tanks</a>
+            </div>
+          </nav>
+          <nav class="filter__categoryleft">
+            <div class="filter__headerleft">DESIGNER</div>
+            <div class="filter__hiddenmenuleft">
+              <a href="#">Accessories</a>
+              <a href="#">Bags</a>
+              <a href="#">Denim</a>
+              <a href="#">Hoodies & Sweatshirts</a>
+              <a href="#">Jackets & Coats</a>
+              <a href="#">Polos</a>
+              <a href="#">Shirts</a>
+              <a href="#">Shoes</a>
+              <a href="#">Sweaters & Knits</a>
+              <a href="#">T-Shirts</a>
+              <a href="#">Tanks</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="filter__ridth">
+        <div class="filter__textridth filter__marginridth">TRENDING NOW</div>
+        <div class="filter__sizeridth">
+          <div class="filter__textridth filter__marginridth  filter__wrapridth">SIZE</div>
+          <div class="filter__sizesridth filter__hiddenridth">
+            <div>
+              <input type="checkbox"> XS
+            </div>
+            <div>
+              <input type="checkbox"> S
+            </div>
+            <div>
+              <input type="checkbox"> M
+            </div>
+            <div>
+              <input type="checkbox"> L
+            </div>
+          </div>
+        </div>
+        <div class="filter__textridth">PRICE</div>
+      </div>
+    </div>
+    <main class="products container">
+      <div class="products__elments">
+
+      </div>
+      <div class="products__accordeon">
+        <nav class="products__menu">
+          <img src="img/galka_left.svg" alt="" class="products__img">
+          <a href="#" class="products__link"> <span>1</span></a>
+          <a href="#" class="products__link">2</a>
+          <a href="#" class="products__link">3</a>
+          <a href="#" class="products__link">4</a>
+          <a href="#" class="products__link">5</a>
+          <a href="#" class="products__link">6</a>
+          <a href="#" class="products__link">...20</a>
+          <img src="img/galka_ridth.svg" alt="" class="products__img">
+        </nav>
+      </div>
+
+    </main>
+    <section class="feature">
+      <div class="feature__cardbox container">
+        <div class="feature__card">
+          <img class="feature__img" src="img/logo-1.svg" alt="logo-1">
+          <div class="feature__info">
+            <h5 class="feature__title">Free Delivery</h5>
+            <p class="feature__text">Worldwide delivery on all. Authorit tively morph <br> next-generation innov
+              tion with extensive models.</p>
+          </div>
+        </div>
+        <div class="feature__card">
+          <img class="feature__img" src="img/logo-2.svg" alt="logo-2">
+          <div class="feature__info">
+            <h5 class="feature__title">Sales & discounts</h5>
+            <p class="feature__text">Worldwide delivery on all. Authorit tively morph <br> next-generation innov
+              tion with extensive models.</p>
+          </div>
+        </div>
+        <div class="feature__card ">
+          <img class="feature__img" src="img/logo-3.svg" alt="logo-3">
+          <div class="feature__info">
+            <h5 class="feature__title">Quality assurance</h5>
+            <p class="feature__text">Worldwide delivery on all. Authorit tively morph <br> next-generation innov
+              tion with extensive models.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="subscribe">
+      <div class="subscribe__body container">
+        <div class="subscribe__left">
+          <div class="subscribe__img"><img src="img/avatar.png" alt="avatar">
+          </div>
+          <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+            <span class="subscribe__style">condimentum“</span> </p>
+        </div>
+        <div class="subscribe__ridth">
+          <h5 class="subscribe__title"><span class="subscribe__stylesub">SUBSCRIBE</span><br>
+            FOR OUR NEWLETTER AND PROMOTION</h5>
+          <div class="subscribe__area">
+            <form class="subscribe__form" action="#">
+              <input type="email" placeholder="Enter Your Email" class="subscribe__email">
+              <button type="submit" class="subscribe__button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__body container">
+        <div class="footer__copy">
+          <p class="footer__text">© 2021 Brand All Rights Reserved.</p>
+        </div>
+        <address class="footer__social">
+          <div class="footer__media">
+            <img src="img/media_f.svg" alt="media_f">
+          </div>
+          <div class="footer__mediai">
+            <img src="img/media_i.svg" alt="media_i">
+          </div>
+          <div class="footer__media">
+            <img src="img/media_p.svg" alt="media_p">
+          </div>
+          <div class="footer__media">
+            <img src="img/media_t.svg" alt="media_t">
+          </div>
+        </address>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/basket/productsDTO.js"></script>
+  <script src="scripts/basket/products.js"></script>
+  <script src="scripts/basket/productCards.js"></script>
+  <script src="scripts/basket/basketShop.js"></script>
+</body>
+
+</html>
